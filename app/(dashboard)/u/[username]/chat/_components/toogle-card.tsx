@@ -7,7 +7,7 @@ import { Switch } from "@/components/ui/switch";
 import { updateStream } from "@/actions/stream";
 import { Skeleton } from "@/components/ui/skeleton";
 
-type FieldTypes = "isChatEnable" | "isChatDelayed" | "isChatFollowersOnly";
+type FieldTypes = "isChatEnabled" | "isChatDelayed" | "isChatFollowersOnly";
 
 interface ToggleCardProps {
     label: string;
