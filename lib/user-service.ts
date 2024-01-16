@@ -16,7 +16,7 @@ export const getUserByUsername = async (username: string) => {
                     id: true,
                     isLive: true,
                     isChatDelayed: true,
-                    isChatEnable: true,
+                    isChatEnabled: true,
                     isChatFollowersOnly: true,
                     thumbnailUrl: true,
                     name: true,

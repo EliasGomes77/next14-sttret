@@ -30,9 +30,8 @@ type CustomUser = {
     bio: string | null;
     stream: CustomStream | null;
     imageUrl: string;
-    _count: { followebBy: number };
+    _count: { followedBy: number };
 };
-
 interface StreamPlayerProps {
     user: CustomUser;
     stream: CustomStream;
@@ -95,7 +94,7 @@ export const StreamPlayer = ({
                         hostName={user.username}
                         hostIdentity={user.id}
                         isFollowing={isFollowing}
-                        isChatEnabled={stream.isChatEnable}
+                        isChatEnabled={stream.isChatEnabled}
                         isChatDelayed={stream.isChatDelayed}
                         isChatFollowersOnly={stream.isChatFollowersOnly}
                     />
